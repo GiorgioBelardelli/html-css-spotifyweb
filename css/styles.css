@@ -59,14 +59,30 @@
 }
 
 #playingAlbum {
-    width: 10%;
-    margin: 0 20px;
+    width: 5rem;
+    margin: 0 2rem;
     vertical-align: middle;
 }
 
 #controller .col i{
     vertical-align: middle;
-    margin: 0 5px;
+    margin: 0 .5rem;
+}
+
+#controller .playerCol i{
+    font-size: 2rem;
+    margin: 0.5rem 1.5rem ;
+    
+}
+
+.playerCol{
+    width: 50rem;
+    text-align: center;
+}
+
+#controller .playerCol .fa-circle-play{
+    font-size: 3rem;
+    color: #f9f9f9;
 }
 
 .controllerText{
@@ -85,16 +101,20 @@
 
 
 
+
+
+
 /*debug*/
 .row{
     display: flex;
     justify-content: space-between;
-    align-items: center; 
 }
 .col{
     border: 1px dashed white;
     
+    
 }
+
 
 
 
@@ -108,13 +128,52 @@
 SLIDER STILI 
 *************************/
 
-.slider-container .slider{
-    width:100%;
-    height: 10px;
-    border-radius: 5px;
-    outline: none;
-    vertical-align: middle;
+.sliderContainer{
+    width: 100%;
+
+    /*DEBUG*/
+    border: 1px dashed yellow;
+    
 }
+
+.slider{
+    width: 80%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: .5rem;
+    background-color: #727272;
+    opacity: .7;
+    border-radius: 30px;
+}
+
+.slider:hover{
+    opacity: 1;
+}
+
+.slider::-moz-range-thumb {
+    width: 20px; 
+    height: 20px;
+    border-radius: 50%; 
+    background: #ffffff; 
+    cursor: pointer; 
+    opacity: 0;
+  }
+
+  .slider::-moz-range-thumb:hover{
+    opacity: 1;
+  }
+
+/* .slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%; 
+    height: 25px; 
+    background: #d3d3d3; 
+    outline: none; 
+    opacity: 0.7; 
+    -webkit-transition: .2s; 
+    transition: opacity .2s;
+  } */
 
 
 
