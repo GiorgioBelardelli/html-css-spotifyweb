@@ -2,20 +2,70 @@
 <html>
     <head>
         <title>Spotify</title>
-        <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <!-- Sezione centrale-->
         <main>
+            <div id="wrapper">
 
+                <div id="sideBar">
+
+                </div>
+
+                <div id="mainContent">
+                    <div id="shadowBox">
+                        <button id="upgradeButton"> EFFETTUA L'UPGRADE </button>
+                    </div>
+
+                </div>
+
+            </div>
         </main>
         <!--Sezione player-->
         <footer>
-            
+            <div id="controller">
+                <div class="row">
+
+                    <div class="col">
+                        <img id="playingAlbum" src="img/player_left.jpg" alt="Album in riproduzione">
+                        <div class="controllerText">
+                            <h5>Sinister</h5>
+                            <span>Brano Nome</span>
+                        </div>
+                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#"><i class="fa-regular fa-folder"></i></a>
+                    </div>
+
+                    <div class="col">
+                        <i class="fa-solid fa-shuffle"></i>
+                        <i class="fa-solid fa-backward-step"></i>
+                        <i class="fa-regular fa-circle-play"></i>                  
+                        <i class="fa-solid fa-forward-step"></i>
+                        <i class="fa-solid fa-arrow-rotate-right"></i>
+                        <div class="sliderContainer">
+                            0:25
+                            <input class="slider" type="range" min="0" max="100" value="50">
+                            
+                            4:35
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <i class="fa-solid fa-bars"></i>
+                        <i class="fa-solid fa-desktop"></i>
+                        <i class="fa-solid fa-volume-high"></i>
+                        <div class="sliderContainer">
+                            <input class="slider" type="range" min="0" max="100" value="50">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
 
     </body>

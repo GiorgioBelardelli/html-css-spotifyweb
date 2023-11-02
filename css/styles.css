@@ -1,9 +1,120 @@
-:root{
-    font-family: 'Montserrat', sans-serif;;
+:root {
+    font-family: 'Montserrat', sans-serif;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+
+
+/*Stili contentuto principale*/
+
+#wrapper{
+    height: calc(100vh - 100px);
+    background-color: blue;
+    display: flex;
+
+}
+
+#sideBar{
+    width: 250px;
+    height: 100%;
+    background-color: #000000;
+}
+
+#mainContent{
+    flex-grow: 1;
+    height: 100%;
+    background-color: #141922;
+    
+}
+
+#shadowBox{
+    height: 100px;
+    background-color: #080b12;
+    opacity: .5;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+
+}
+
+#upgradeButton{
+    color: white;
+    background-color: #080b12;
+    padding: 10px 50px;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/*stili controller*/
+#controller{
+    height: 100px;
+    background-color: #282828;
+    color: #f9f9f9;
+}
+
+#playingAlbum {
+    width: 10%;
+    margin: 0 20px;
+    vertical-align: middle;
+}
+
+#controller .col i{
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+.controllerText{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 2rem;
+}
+
+.controllerText span, a{
+    color: #727272;
+}
+
+.controllerText a:hover{
+    color: #ffffff;
+}
+
+
+
+/*debug*/
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.col{
+    border: 1px dashed white;
+    
+}
+
+
+
+
+
+
+
+
+
+/*************************
+SLIDER STILI 
+*************************/
+
+.slider-container .slider{
+    width:100%;
+    height: 10px;
+    border-radius: 5px;
+    outline: none;
+    vertical-align: middle;
+}
+
+
+
