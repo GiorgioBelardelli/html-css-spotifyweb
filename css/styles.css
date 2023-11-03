@@ -177,6 +177,10 @@ a{
 
 
 /*STILI MAIN CONTENT*/
+#mainContent{
+    max-height: 100vh;
+    overflow-y: auto;
+}
 
 .navCol li{
     list-style-type: none;
@@ -189,20 +193,51 @@ a{
     color: #ffffff;
 }
 
-.selected{
+.navCol .selectedIcon{
     border-left: 0;
     border-bottom: 2px solid yellowgreen ;
+    color: #727272;
     
 }
 
 .navRow{
     margin-top: 120px;
+    margin-bottom: 3rem;
+    justify-content: center;
 }
 
 .navCol a{
     font-weight: bold;
 }
 
+.albumCol{
+    width: calc(100%/6);
+    text-align: center;
+    color: #ffffff;    
+}
+
+.albumImg{
+    width: 15rem;
+    margin: .8rem 0
+}
+
+.containerText{
+    display: block;    
+    color: #ffffff;
+    margin: 3rem 0 1rem 2.5rem;
+    line-height: 2.5rem;
+}
+.containerText span{
+    color: #727272;
+}
+
+.albumCol span{
+    color: #727272;
+}
+
+.roundImg{
+    border-radius: 50% ;
+}
 
 
 /*STILI CONTROLLER IN BASSO*/
@@ -261,7 +296,7 @@ a{
 /*debug*/
 .row{
     display: flex;
-    justify-content: center;
+    
 }
 .col{
     
