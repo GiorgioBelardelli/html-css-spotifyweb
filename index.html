@@ -15,14 +15,84 @@
             <div id="wrapper">
 
                 <div id="sideBar">
+                    <img id="logoImg" src="img/logo.svg" alt="logo">
+                    <div id="sideBarMenu">
+                        <a class="noDecoration selectedIcon" href="#">
+                            <img class="sideBarIcons" src="img/home.svg" alt="home icona">
+                            <span class="showSpan">Home</span>   
+                        </a>
+                        <a class="noDecoration" href="#">
+                            <img class="sideBarIcons" src="img/search.svg" alt="search icona">
+                            <span class="showSpan">Cerca</span>
+                        </a>
+                        <a class="noDecoration" href="#">
+                            <img class="sideBarIcons" src="img/libreria.svg" alt="icona libreria">
+                            <span class="showSpan">La tua libreria</span>
+                        </a>
+                    </div>
+                    <div class="playlistContainer">
+                        <h4>PLAYLIST</h4>
+                        <ul>
+                            <li>
+                                <a class="noDecoration" href="#">
+                                    <div class="containerSquare">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                    Crea Playlist 
+                                </a>  
+                            </li>
+                            <li><a class="noDecoration" href="#">Nome Playlist</a></li>
+                            <li><a class="noDecoration" href="#">Nome Playlist</a></li>
+                            <li><a class="noDecoration" href="#">Nome Playlist</a></li>
+                            <li><a class="noDecoration" href="#">Nome Playlist</a></li>
+                            <li><a class="noDecoration" href="#">Nome Playlist</a></li>
+                            <li><a class="noDecoration" href="#">Nome Playlist</a></li>
+                            <li><a class="noDecoration" href="#">Nome Playlist</a></li>
+                        </ul> 
+                    </div>
+
+                    <div class="profileCard">
+                        <div class="downloadContainer">
+                            <a class="noDecoration" href="#">
+                                <img src="img/download.svg" alt="download icon">
+                                <span>Installa app</span>  
+                            </a>
+                        </div>
+                        <div class="profileContainer">
+                                <img id="userImg" src="img/profile.svg" alt="profile icon">
+                                <span>John Doe</span>  
+                        </div>
+                    </div>
+                    
 
                 </div>
 
                 <div id="mainContent">
                     <div id="shadowBox">
-                        <button id="upgradeButton"> EFFETTUA L'UPGRADE </button>
+                        <a href="#" id="upgradeButton"> EFFETTUA L'UPGRADE </a>       
                     </div>
-
+                    <div class="row navRow">
+                        <div class="col navCol">
+                            <ul>
+                            <li><a class="selectedIcon" href="#">IN EVIDENZA</a></li>
+                            <li><a href="#">PODCAST</a></li>
+                            <li><a href="#">CLASSIFICHE</a></li>
+                            <li><a href="#">GENERI E MOOD</a></li>
+                            <li><a href="#">NUOVE USCITE</a></li>
+                            <li><a href="#">SCOPRI</a></li>
+                        </ul>
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <h1>Recently played</h1>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
                 </div>
 
             </div>
@@ -30,7 +100,7 @@
         <!--Sezione player-->
         <footer>
             <div id="controller">
-                <div class="row">
+                <div class="row controllerRow">
 
                     <div class="col">
                         <img id="playingAlbum" src="img/player_left.jpg" alt="Album in riproduzione">
@@ -58,9 +128,9 @@
                     <div class="col">
                         <i class="fa-solid fa-bars"></i>
                         <i class="fa-solid fa-desktop"></i>
-                        <i class="fa-solid fa-volume-high"></i>
-                        <div class="sliderContainer">
-                            <input class="slider" type="range" min="0" max="100">
+                        <i class="fa-solid fa-volume-high"></i> 
+                        <div class="sliderContainer sliderVolumeContainer">
+                            <input class="slider sliderVolume" type="range" min="0" max="100">
                         </div>
                     </div>
                 </div>
