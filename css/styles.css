@@ -89,9 +89,6 @@ a{
     width: 11rem;
 }
 
-/* .noDecoration{
-    text-decoration: none;
-} */
 
 .selectedIcon{
     border-left: 3px solid yellowgreen;
@@ -130,7 +127,6 @@ a{
 #sideBar a:hover {
     color: #ffffff;
 }
-
 
 
 .profileCard{
@@ -173,14 +169,30 @@ a{
 
 .playlistContainer{
     overflow-y: auto;
+    height: 23rem;
 }
+
 
 
 /*STILI MAIN CONTENT*/
 #mainContent{
     max-height: 100vh;
     overflow-y: auto;
+   
 }
+
+#mainContent span{
+     color: #727272;
+}
+
+#mainContent i{
+    color: #ffffff;
+    font-size: 5rem;
+    position: absolute;
+    top: 100px;
+    left: 150px;
+}
+
 
 .navCol li{
     list-style-type: none;
@@ -214,6 +226,7 @@ a{
     width: calc(100%/6);
     text-align: center;
     color: #ffffff;    
+    position: relative;
 }
 
 .albumImg{
@@ -226,13 +239,6 @@ a{
     color: #ffffff;
     margin: 3rem 0 1rem 2.5rem;
     line-height: 2.5rem;
-}
-.containerText span{
-    color: #727272;
-}
-
-.albumCol span{
-    color: #727272;
 }
 
 .roundImg{
