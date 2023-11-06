@@ -22,12 +22,6 @@ a{
 
 }
 
-#sideBar{
-    width: 250px;
-    height: 100%;
-    background-color: #000000;
-}
-
 #mainContent{
     flex-grow: 1;
     height: 100%;
@@ -69,7 +63,14 @@ a{
 
 
 /*STILI SIDEBAR*/
+#logoImgSmall{
+    display: none;
+}
+
 #sideBar{
+    width: 250px;
+    height: 100%;
+    background-color: #000000;
     padding: 1.5rem;
     color: #727272;
     font-weight: bold;
@@ -83,7 +84,7 @@ a{
 }
 
 #sideBarMenu{
-    margin: 1.5rem 0;
+    margin: 1.5rem -1.5rem;
 }
 
 #logoImg{
@@ -100,6 +101,7 @@ a{
     width: 2rem;
     vertical-align: middle;
     color: #727272;
+    margin-left: 1.5rem;
 }
 
 .showSpan{
@@ -233,8 +235,8 @@ a{
 
 
 .albumImg{
-    width: 15rem;
-    margin: .8rem 0
+    max-width: 100%;
+    margin: .8rem 1rem;
 }
 
 .albumCol:hover .albumImg{
@@ -319,9 +321,7 @@ a{
     display: flex;
     
 }
-.col{
-      
-}
+
 .controllerRow{
     justify-content: space-between;
     align-items: center;
@@ -386,7 +386,7 @@ SLIDER STILI
 
 
 /*******************************
-RESPONSIVE 
+RESPONSIVE 768
 *******************************/
 
 @media all and (max-width: 768px){
@@ -401,7 +401,8 @@ RESPONSIVE
     }
 
     .albumImg{
-        width: 100%;
+       
+        margin-left: .5rem;
     }
 
     .navCol{
@@ -441,3 +442,128 @@ RESPONSIVE
 
 }
 
+/*******************************
+RESPONSIVE S
+*******************************/
+
+@media all and (max-width: 624px){
+    
+    .rowStart{
+        gap: .5rem;
+    }
+
+    .albumCol{
+        width: calc(50% - .5rem);
+    }
+    .albumImg{
+        margin: 0 .5rem;
+    }
+    .containerText{
+        margin-left: 0.5rem;
+    }
+    .iconsContainer i{
+        display: block;
+    }
+    #controller .playerCol i {
+        margin: .5rem .2rem;
+      }
+
+    .controllerCol{
+        display: flex;
+        align-items: center;
+    }
+
+    #controller .controllerCol i {
+        margin: 0rem .4rem;
+      }
+
+    .sliderVolumeContainer {
+        width: 100%;
+    }
+    .sliderVolumeContainer .slider{
+        width: 100%;
+    }
+    .sliderContainer .slider{
+        width: 70%;
+    }
+    .controllerText span{
+        font-size: .7rem;
+    }
+}
+
+/*******************************
+RESPONSIVE XS
+*******************************/
+
+@media all and (max-width: 480px){
+    
+    #upgradeButton {
+        text-decoration: none;
+        color: white;
+        background-color: #080b12;
+        padding: 1rem 0.5rem;
+        border: 1px solid white;
+        border-radius: 30px;
+        font-weight: bold;
+        margin-right: 5rem;
+    }
+    #upgradeButton:hover{
+        padding: 1.2rem .7rem;
+    }
+    #logoImg{
+        display: none;
+    }
+    #logoImgSmall{
+        display: block;
+        width: 2rem;
+    }
+    #sideBar{
+        width: 80px;
+    }
+    #sideBarMenu{
+        margin: 0.5rem -1.5rem;
+    }
+    #sideBarMenu span{
+        display: none;
+    }
+    .playlistContainer{
+        display: none;
+    }
+    .downloadContainer{
+        margin-bottom: 0;
+        border: none;
+    }
+    .selectedIcon{
+        border: none;
+    }
+    .profileCard{
+        padding: 0;
+    }
+    .profileCard span{
+        display: none;
+    }
+    #controller .playerCol i {
+        font-size: 1.5rem;
+    }
+    #controller .playerCol .fa-circle-play {
+        font-size: 2rem;
+        color: #f9f9f9;
+    }
+    #playingAlbum {
+        width: 2.5rem;
+        margin: 0 .2rem;
+    }
+    .controllerText{
+        line-height: .8rem;
+    }
+    .sliderContainer .slider {
+        width: 55%;
+    }
+    #controller .controllerCol i {
+        margin: 0rem .2rem;
+    }
+    .sliderContainer{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
