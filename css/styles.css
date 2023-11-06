@@ -271,7 +271,7 @@ a{
     vertical-align: middle;
 }
 
-#controller .col i{
+#controller .controllerCol i{
     vertical-align: middle;
     margin: 2.5rem .5rem;
 }
@@ -306,6 +306,9 @@ a{
     color: #ffffff;
 }
 
+.iconsContainer{
+    display: inline-block;
+}
 
 
 
@@ -343,7 +346,7 @@ SLIDER STILI
 }
 
 .slider{
-    width: 80%;
+    width: 75%;
     -webkit-appearance: none;
     appearance: none;
     height: .5rem;
@@ -407,18 +410,34 @@ RESPONSIVE
     .navCol li{
         margin: 1rem .6rem;
     }
-    .col{
-        width: calc(100%/3);
-        
+    .controllerCol{
+        width: 25%;
+        flex-grow: 1;      
+    } 
+    .playerCol{
+        width: 45%;
     }
 
-    /* #controller .playerCol i{
-        font-size: 1rem;
-        margin: 0.5rem .8rem ;
-        
+    #playingAlbum{
+        width: 3rem;
+        margin: 0 .2rem;
     }
-    #controller .playerCol .fa-circle-play{
-        font-size: 2rem;
-        color: #f9f9f9;
-    } */
+
+    #controller .playerCol i{
+        margin: .5rem .7rem;
+    }
+
+    #controller .controllerCol i{
+        margin: 0rem .1rem;
+    }
+
+    .sliderVolumeContainer{
+        width: 60%;
+    }
+
+    .controllerText{
+        margin-right: 0;
+    }
+
 }
+
