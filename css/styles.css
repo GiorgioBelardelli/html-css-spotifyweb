@@ -133,9 +133,6 @@ a{
 .profileCard{
     padding: 5px;
     margin-top: auto;
-
-    /* DEBUG
-    border: 1px dashed white; */
 }
 
 #userImg{
@@ -320,15 +317,12 @@ a{
     
 }
 .col{
-    
-    
-    /* DEBUG
-    border: 1px dashed white; */
-       
+      
 }
 .controllerRow{
     justify-content: space-between;
     align-items: center;
+    height: 100%;
 }
 
 
@@ -343,11 +337,6 @@ a{
 SLIDER STILI 
 *************************/
 
-.sliderContainer{
-
-    /* DEBUG
-    border: 1px dashed yellow; */ 
-}
 
 .sliderVolumeContainer{
     display: inline-block ;
@@ -393,3 +382,43 @@ SLIDER STILI
 
 
 
+/*******************************
+RESPONSIVE 
+*******************************/
+
+@media all and (max-width: 768px){
+    
+    .rowStart{
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .albumCol{
+        width: calc((100% / 4) - 1rem);
+    }
+
+    .albumImg{
+        width: 100%;
+    }
+
+    .navCol{
+        text-align: center;
+    }
+    .navCol li{
+        margin: 1rem .6rem;
+    }
+    .col{
+        width: calc(100%/3);
+        
+    }
+
+    /* #controller .playerCol i{
+        font-size: 1rem;
+        margin: 0.5rem .8rem ;
+        
+    }
+    #controller .playerCol .fa-circle-play{
+        font-size: 2rem;
+        color: #f9f9f9;
+    } */
+}
