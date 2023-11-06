@@ -74,7 +74,8 @@ a{
     color: #727272;
     font-weight: bold;
     line-height: 2.5rem;
-    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 #sideBar a{
@@ -82,7 +83,7 @@ a{
 }
 
 #sideBarMenu{
-    margin: 1rem auto;
+    margin: 1.5rem 0;
 }
 
 #logoImg{
@@ -130,12 +131,8 @@ a{
 
 
 .profileCard{
-    width: 12.5rem;
     padding: 5px;
     margin-top: auto;
-    position: fixed;
-    bottom: 110px;
-    z-index: 99;
 
     /* DEBUG
     border: 1px dashed white; */
@@ -185,12 +182,20 @@ a{
      color: #727272;
 }
 
-#mainContent i{
+.containerI{
+    
     color: #ffffff;
     font-size: 5rem;
     position: absolute;
-    top: 100px;
-    left: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.albumCol a{
+    position: relative;
+    display: block;
 }
 
 
@@ -201,7 +206,7 @@ a{
 
 }
 
-.navCol li a:hover{
+.navCol li a:hover {
     color: #ffffff;
 }
 
@@ -229,10 +234,20 @@ a{
     position: relative;
 }
 
+
 .albumImg{
     width: 15rem;
     margin: .8rem 0
 }
+
+.albumCol:hover .albumImg{
+    opacity: .7;
+}
+
+.albumCol:hover .containerI{
+    opacity: 1;
+}
+
 
 .containerText{
     display: block;    
